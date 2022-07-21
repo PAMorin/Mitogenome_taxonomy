@@ -70,7 +70,7 @@ boot.dA <- function(g, nrep = boot_rep, num.cores = 1, ...) {
 }
 
 #load all haplotype sequences as fasta file
-Haps <- read.fasta(fasta_file)
+Haps <- read.fasta(fasta_file) # need to decompress fasta.gz files first
 
 #load strata file
 strata.df <- readGenData(strata_file)
